@@ -1150,16 +1150,7 @@
 				object-fit: contain; 
 			}
 
-			@media only screen and (max-width: 600px) {
-				.guide-header-image {
-					display: none;
-				}
-
-				.guide-header-image-mobile {
-					display: block;
-				}
-
-			}
+			
 
 			a {
 				color: black;
@@ -1171,296 +1162,339 @@
 			}
 			
 			logo-slider {
-				  --image-height: 250px;
-				  --image-width: 350px;
-				  border: none;
-				  padding: 20px;
-				  overflow: hidden;
-				  max-width: 100%;
-				  width: 100%;
-				  margin: 0 auto;
-				  position: relative;
-				  display: flex;
-				}
+              --image-height: 250px;
+              --image-width: 350px;
+              border: none;
+              padding: 20px;
+              overflow: hidden;
+              max-width: 100%;
+              width: 100%;
+              margin: 0 auto;
+              position: relative;
+              display: flex;
+          }
 
-				logo-slider div {
-				  display: flex;
-				  position: relative;
-				  animation: marquee 25s linear infinite;
-				  justify-content: space-around;
-				}
-				logo-slider img {
-				  display: block;
-				  min-width: var(--image-width);
-				  height: var(--image-height);
-				  margin: 0 1vw;
-				  border-radius: 8px;
-				  overflow: hidden;
-				}
-				logo-slider:after {
-				  content: "";
-				  position: absolute;
-				  width: 100%;
-				  height: 100%;
-				  left: 0;
-				  top: 0;
-				  background: rgb(219,209,251);
-				  background: linear-gradient(0deg, rgba(219,209,251,1) 0%, rgba(94,21,255,1) 100%);
-				  background: transparent;
-				}
-				@media (max-width: 900px) {
-				  logo-slider {
-					--image-size: 50px;
-					--image-size: min(max(50px, 10vw), 100px);
-				  }
-				}
-				
-				@keyframes marquee {
-				  0% {
-					transform: translateX(0%);
-				  }
-				  100% {
-					transform: translateX(-100%);
-				  }
-				}
-				
-		body {
-			background-color: rgba(94,21, 255, 0.2);
-		}
+          logo-slider div {
+              display: flex;
+              position: relative;
+              animation: marquee 25s linear infinite;
+              justify-content: space-around;
+          }
+          logo-slider img {
+              display: block;
+              min-width: var(--image-width);
+              height: var(--image-height);
+              margin: 0 1vw;
+              border-radius: 8px;
+              overflow: hidden;
+          }
+          logo-slider:after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background: rgb(219,209,251);
+              background: linear-gradient(0deg, rgba(219,209,251,1) 0%, rgba(94,21,255,1) 100%);
+              background: transparent;
+          }
+          @media (max-width: 900px) {
+              logo-slider {
+               --image-size: 50px;
+               --image-size: min(max(50px, 10vw), 100px);
+           }
+       }
+       
+       @keyframes marquee {
+          0% {
+           transform: translateX(0%);
+       }
+       100% {
+           transform: translateX(-100%);
+       }
+   }
+   
+   body {
+     background-color: rgba(94,21, 255, 0.2);
+ }
+ 
+ .pres-he {
+     object-position: 10% 10%;
+ }
+ 
+ .pres-cw {
+     object-position: 15% 10%;
+ }
+ 
+ .pres-ca {
+     object-position: 0% 10%;
+ }
+ 
+ .pres-bh {
+     object-position: 15% 10%;
+ }
+ 
+ .pres-kc {
+ }
+ 
+ @media only screen and (max-width: 450px) {
+	 .pres-he {
+		  object-position: 25% 10%;
+	  }
+	  
+	  .pres-cw {
+		  object-position: 30% 10%;
+	  }
+	  
+	  .pres-ca {
+		  object-position: 15% 10%;
+	  }
+	  
+	  .pres-bh {
+		  object-position: 25% 10%;
+	  }
+	  
+	  .pres-kc {
+		  object-position: 35% 10%;
+	  }
+ }
 
-		</style>
+</style>
 
-		<div class="guide-header-background"></div>
-		<div class="guide-header-image">
-			<logo-slider>
-				  
-				  <div>
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_SofiaPacker2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_LB_ChristianZidouemba2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_HannahEdwards2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03202021_GR_BrandonHill2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_CharlesAborisade2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03112021_DA_KateCarpenter2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_GH_ChloeWagner-1500x1000.jpg">
-				   </div>
-				  
-				  <div>
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_SofiaPacker2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_LB_ChristianZidouemba2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_HannahEdwards2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03202021_GR_BrandonHill2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_CharlesAborisade2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03112021_DA_KateCarpenter2-1500x1000.jpg">
-					<img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_GH_ChloeWagner-1500x1000.jpg">
-				  </div>
-				   
-				</logo-slider>
-		</div>
-		
-		<img class="guide-header-image-mobile" src="https://github.com/AaronKovacs/Hatchet-2020-SA/blob/master/SAHeaderMobile.png?raw=true">
-		<div class="guide-container basketball-guide-2017-container" style="">
+<div class="guide-header-background"></div>
+<div class="guide-header-image">
+ <logo-slider>
+  
+  <div>
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_SofiaPacker2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_LB_ChristianZidouemba2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_HannahEdwards2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03202021_GR_BrandonHill2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_CharlesAborisade2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03112021_DA_KateCarpenter2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_GH_ChloeWagner-1500x1000.jpg">
+</div>
 
-			<section class="guide-section">
+<div>
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_SofiaPacker2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_LB_ChristianZidouemba2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_HannahEdwards2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03202021_GR_BrandonHill2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_CharlesAborisade2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03112021_DA_KateCarpenter2-1500x1000.jpg">
+   <img src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_GH_ChloeWagner-1500x1000.jpg">
+</div>
 
-				<div class="item-container" style="margin-top: -10em; display: inline-block; box-shadow: 0 4px 8px 0 rgba(82, 142, 255, 0.2), 0 6px 20px 0 rgba(82, 142, 255, 0.19);">
-					<div class="item-right">
-						<div class="item-quote">
-							<h4 class="guide-header-subtitle">The Hatchet's</h4>
-							<h3 class="guide-header-title">Guide to 2021 SA Elections</h3>
-							<p class="guide-header-body">Candidates running for the Student Association’s top positions say rebuilding trust is their top priority if elected to lead the body.</p>
-
-							<a href="https://www.gwhatchet.com/?p=1138868&preview=true">
-								<p class="guide-header-read-more">Read the Cover Story</p>
-							</a>
-							
-
-						</div>
-					</div>
-				</div>
-
-				<div>
-					
-					<div class="guide-section-header" style="margin-bottom: 2em; background-color: #5E15FF; width: fit-content; padding: 1em; padding-left: 1em;  padding-right: 1em; color: white; border-radius: 16px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 2em;">
-						<h3 class="guide-section-header-title" style="font-size: 20pt;">Candidates for President</h3>
-						<p class="guide-section-header-subtitle" style="margin: 0; padding: 0;">There are five candidates running for SA's top spot this year.</p>
-					</div>
-					
-					<a href="https://www.gwhatchet.com/?p=1138801&preview=true">
-						<div class="carousel-card">
-							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_LB_ChristianZidouemba2-1500x1000.jpg">
-							<div class="carousel-card-header">President</div>
-							<div class="carousel-content">
-								<h3 class="carousel-card-title">Christian Zidouemba</h3>
-								<p class="carousel-card-subtitle">Junior</p>
-								<p class="carousel-card-body">Zidouemba said his friendly disposition will help him build relationships with students on campus.</p>
-								<span class="carousel-card-link">Read Full Bio</span>
-							</div>
-						</div>
-					</a>
-					
-					<a href="https://www.gwhatchet.com/?p=1115851&preview=true">
-						<div class="carousel-card">
-							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_HannahEdwards2-1500x1000.jpg" style="object-position: 10% 10%;">
-							<div class="carousel-card-header">President</div>
-							<div class="carousel-content">
-								<h3 class="carousel-card-title">Hannah Edwards</h3>
-								<p class="carousel-card-subtitle">Junior</p>
-								<p class="carousel-card-body">Junior Hannah Edwards, the former Student Association vice president for diversity and inclusion, is vying for SA president.</p>
-								<span class="carousel-card-link">Read Full Bio</span>
-							</div>
-						</div>
-					</a>
-					
-					<a href="https://www.gwhatchet.com/?p=1115851&preview=true">
-						<div class="carousel-card">
-							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_GH_ChloeWagner-1500x1000.jpg" style="object-position: 15% 10%;">
-							<div class="carousel-card-header">President</div>
-							<div class="carousel-content">
-								<h3 class="carousel-card-title">Chloe Wagner</h3>
-								<p class="carousel-card-subtitle">Sophomore</p>
-								<p class="carousel-card-body">Presidential candidate Bishop Walton said he will work to decrease food insecurity and increase student diversity.</p>
-								<span class="carousel-card-link">Read Full Bio</span>
-							</div>
-						</div>
-					</a>
-					
-					<a href="https://www.gwhatchet.com/?p=1138797&preview=true">
-						<div class="carousel-card">
-							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_CharlesAborisade2-1500x1000.jpg" style="object-position: 0% 10%;">
-							<div class="carousel-card-header">President</div>
-							<div class="carousel-content">
-								<h3 class="carousel-card-title">Charles Aborisade</h3>
-								<p class="carousel-card-subtitle">Junior</p>
-								<p class="carousel-card-body">Aborisade said students needs a “progressive” student leader who can bring students together after three semesters away from campus.</p>
-								<span class="carousel-card-link">Read Full Bio</span>
-							</div>
-						</div>
-					</a>
-					
-					<a href="https://www.gwhatchet.com/?p=1138810&preview=true">
-						<div class="carousel-card">
-							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03202021_GR_BrandonHill2-1500x1000.jpg" style="object-position: 15% 10%;">
-							<div class="carousel-card-header">President</div>
-							<div class="carousel-content">
-								<h3 class="carousel-card-title">Brandon Hill</h3>
-								<p class="carousel-card-subtitle">Junior</p>
-								<p class="carousel-card-body">Hill said he recognizes that at times the SA seems to be working against the student body, but the body’s “roots and intentions” are to support students.</p>
-								<span class="carousel-card-link">Read Full Bio</span>
-							</div>
-						</div>
-					</a>
-					
-					
-					
-					
-					
-					<div class="guide-section-header" style="margin-bottom: 2em; background-color: #5E15FF; width: fit-content; padding: 1em; padding-left: 1em;  padding-right: 1em; color: white; border-radius: 16px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 2em;">
-						<h3 class="guide-section-header-title" style="font-size: 20pt;">Candidates for Vice President</h3>
-						<p class="guide-section-header-subtitle" style="margin: 0; padding: 0;">There are two candidates running for executive vice president this year.</p>
-					</div>
-					
-					<a href="https://www.gwhatchet.com/?p=1138805&preview=true">
-						<div class="carousel-card">
-							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03112021_DA_KateCarpenter2-1500x1000.jpg">
-							<div class="carousel-card-header">Vice President</div>
-							<div class="carousel-content">
-								<h3 class="carousel-card-title">Kate Carpenter</h3>
-								<p class="carousel-card-subtitle">Sophomore</p>
-								<p class="carousel-card-body">Carpenter said the SA needs to be approachable to build a better relationship with the student body.</p>
-								<span class="carousel-card-link">Read Full Bio</span>
-							</div>
-						</div>
-					</a>
-					
-					<a href="https://www.gwhatchet.com/?p=1138808&preview=true">
-						<div class="carousel-card">
-							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_SofiaPacker2-1500x1000.jpg">
-							<div class="carousel-card-header">Vice President</div>
-							<div class="carousel-content">
-								<h3 class="carousel-card-title">Sofia Packer</h3>
-								<p class="carousel-card-subtitle">Junior</p>
-								<p class="carousel-card-body">Packer said she is the best choice for vice president because she knows what it’s like to be on the “outside” of the SA.</p>
-								<span class="carousel-card-link">Read Full Bio</span>
-							</div>
-						</div>
-					</a>
-					
-					
-					
-		
-			
-
-					
-					<div style="margin-top: 1em;">
-						<a href="https://www.gwhatchet.com/?p=1138834&preview=true">
-							<div class="guide-news-card" style="padding: 0.5em; border-radius: 16px; background-color: #ABEDFF; box-shadow: 0 4px 8px 0 rgba(82, 142, 255, 0.2), 0 6px 20px 0 rgba(82, 142, 255, 0.19);">
-								<img class="guide-news-image" style="background-color: #c4e5f6; object-fit: contain;" src="https://www.gwhatchet.com/wp-content/uploads/2020/04/THE-ELECTION-EXPLAINED-1500x1002.png">
-								<div class="guide-news-content">
-									<h3 class="guide-news-card-title" style="margin-top: 0.8em;">Fact checking candidates' platforms</h3>
-									<p class="guide-news-card-body">Top SA executive candidates have vowed to achieve many objectives if elected to office, but not all of their proposed initiatives are centered around fact.</p>
-									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Lauren Sforza</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					
-					<div style="margin-top: 1em;">
-						<a href="https://www.gwhatchet.com/?p=1139003&preview=true">
-							<div class="guide-news-card" style="padding: 0.5em; border-radius: 16px; background-color: #ABEDFF; box-shadow: 0 4px 8px 0 rgba(82, 142, 255, 0.2), 0 6px 20px 0 rgba(82, 142, 255, 0.19);">
-								<img class="guide-news-image" style="background-color: #c4e5f6; object-fit: contain;" src="https://www.gwhatchet.com/wp-content/uploads/2020/04/THE-ELECTION-EXPLAINED-1500x1002.png">
-								<div class="guide-news-content">
-									<h3 class="guide-news-card-title" style="margin-top: 0.8em;">How to vote on referenda in this year's SA election</h3>
-									<p class="guide-news-card-body">The editorial board urges students to vote yes on both referenda this year. </p>
-									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Andrew Sugrue</p>
-								</div>
-							</div>
-						</a>
-					</div>
-
-				</div>
-
-				<div class="guide-section-header" style="margin-top: 3em;">
-					
-					<div class="endorsements-container">
-						<div class="guide-section-header" style=" background-color: #ABEDFF; width: fit-content; padding: 1em; padding-left: 1em;  padding-right: 1em; color: black; border-radius: 8px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 1em; margin-bottom: 0; padding-bottom: 0;">
-							<h3 class="guide-section-header-title" style="font-size: 24pt;">Hatchet Editorial Board Endorsements</h3>
-							<p class="guide-section-header-subtitle" style="margin: 0; padding: 1em;">The Hatchet's editorial board - a group of opinion writers and staff members on Hatchet staff who are not affiliated with the news section - interviewed all presidential and executive vice president candidates about their platforms in March. Here's who they decided to endorse for each position.</p>
-						</div>
-						<div class="endorsements-card-left">
-							<img class="endorsements-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_HannahEdwards2-1500x1000.jpg">
-							<div class="endorsements-card-content">
-								<p class="endorsements-subtitle">For President</p>
-								<h3 class="endorsements-title">Hannah Edwards</h3>
-								<p class="endorsements-body">The editorial board felt that Edwards has the experience, passion and detailed plans needed to run the SA successfully. </p><br/>
-								<a href="https://www.gwhatchet.com/?p=1139008&preview=true" class="endorsements-link">Read Opinion Piece</a>
-							</div>
-						</div>
-						<div class="endorsements-card-right">
-							<img class="endorsements-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03112021_DA_KateCarpenter2-1500x1000.jpg">
-							<div class="endorsements-card-content">
-								<p class="endorsements-subtitle">For Vice President</p>
-								<h3 class="endorsements-title">Kate Carpenter</h3>
-								<p class="endorsements-body">It is a close call, but we believe Carpenter's experience and specific policy plans make her the best candidate for vice president.</p>
-								<a href="https://www.gwhatchet.com/?p=1138990&preview=true" class="endorsements-link">Read Opinion Piece</a>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-				<a href="#">
-					<div class="guide-section-header" style="margin-bottom: 2em; background-color: #5E15FF; width: fit-content; padding: 1em; padding-left: 1em;  padding-right: 1em; color: white; border-radius: 16px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 4em;">
-						<h3 class="guide-section-header-title" style="font-size: 20pt;">Listen To The Podcast</h3>
-						<p class="guide-section-header-subtitle" style="margin: 0; padding: 0;">GW Hatchet's SA Election Podcast.</p>
-					</div>
-				</a>
-
-			</section>
+</logo-slider>
 
 
-		</div>
-	</div>
+</div>
+
+<img class="guide-header-image-mobile" src="https://github.com/AaronKovacs/Hatchet-2020-SA/blob/master/SAHeaderMobile.png?raw=true">
+<div class="guide-container basketball-guide-2017-container" style="">
+
+ <section class="guide-section">
+
+    <div class="item-container" style="margin-top: -10em; display: inline-block; box-shadow: 0 4px 8px 0 rgba(82, 142, 255, 0.2), 0 6px 20px 0 rgba(82, 142, 255, 0.19);">
+       <div class="item-right">
+          <div class="item-quote">
+             <h4 class="guide-header-subtitle">The Hatchet's</h4>
+             <h3 class="guide-header-title">Guide to 2021 SA Elections</h3>
+             <p class="guide-header-body">Candidates running for the Student Association’s top positions say rebuilding trust is their top priority if elected to lead the body.</p>
+
+             <a href="https://www.gwhatchet.com/?p=1138868&preview=true">
+                <p class="guide-header-read-more">Read the Cover Story</p>
+            </a>
+            
+
+        </div>
+    </div>
+</div>
+
+<div>
+   
+   <div class="guide-section-header" style="margin-bottom: 2em; background-color: #5E15FF; width: fit-content; padding: 1em; padding-left: 1em;  padding-right: 1em; color: white; border-radius: 16px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 2em;">
+      <h3 class="guide-section-header-title" style="font-size: 20pt;">Candidates for President</h3>
+      <p class="guide-section-header-subtitle" style="margin: 0; padding: 0;">There are five candidates running for SA's top spot this year.</p>
+  </div>
+  
+  <a href="https://www.gwhatchet.com/?p=1138801&preview=true">
+      <div class="carousel-card">
+         <img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_LB_ChristianZidouemba2-1500x1000.jpg">
+         <div class="carousel-card-header">President</div>
+         <div class="carousel-content">
+            <h3 class="carousel-card-title">Christian Zidouemba</h3>
+            <p class="carousel-card-subtitle">Junior</p>
+            <p class="carousel-card-body">Zidouemba said his friendly disposition will help him build relationships with students on campus.</p>
+            <span class="carousel-card-link">Read Full Bio</span>
+        </div>
+    </div>
+</a>
+
+<a href="https://www.gwhatchet.com/?p=1115851&preview=true">
+  <div class="carousel-card">
+     <img class="carousel-image pres-he" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_HannahEdwards2-1500x1000.jpg">
+     <div class="carousel-card-header">President</div>
+     <div class="carousel-content">
+        <h3 class="carousel-card-title">Hannah Edwards</h3>
+        <p class="carousel-card-subtitle">Junior</p>
+        <p class="carousel-card-body">Junior Hannah Edwards, the former Student Association vice president for diversity and inclusion, is vying for SA president.</p>
+        <span class="carousel-card-link">Read Full Bio</span>
+    </div>
+</div>
+</a>
+
+<a href="https://www.gwhatchet.com/?p=1115851&preview=true">
+  <div class="carousel-card">
+     <img class="carousel-image pres-cw" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03222021_GH_ChloeWagner-1500x1000.jpg">
+     <div class="carousel-card-header">President</div>
+     <div class="carousel-content">
+        <h3 class="carousel-card-title">Chloe Wagner</h3>
+        <p class="carousel-card-subtitle">Sophomore</p>
+        <p class="carousel-card-body">Presidential candidate Bishop Walton said he will work to decrease food insecurity and increase student diversity.</p>
+        <span class="carousel-card-link">Read Full Bio</span>
+    </div>
+</div>
+</a>
+
+<a href="https://www.gwhatchet.com/?p=1138797&preview=true">
+  <div class="carousel-card">
+     <img class="carousel-image pres-ca" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_CharlesAborisade2-1500x1000.jpg" >
+     <div class="carousel-card-header">President</div>
+     <div class="carousel-content">
+        <h3 class="carousel-card-title">Charles Aborisade</h3>
+        <p class="carousel-card-subtitle">Junior</p>
+        <p class="carousel-card-body">Aborisade said students needs a “progressive” student leader who can bring students together after three semesters away from campus.</p>
+        <span class="carousel-card-link">Read Full Bio</span>
+    </div>
+</div>
+</a>
+
+<a href="https://www.gwhatchet.com/?p=1138810&preview=true">
+  <div class="carousel-card">
+     <img class="carousel-image pres-bh" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03202021_GR_BrandonHill2-1500x1000.jpg">
+     <div class="carousel-card-header">President</div>
+     <div class="carousel-content">
+        <h3 class="carousel-card-title">Brandon Hill</h3>
+        <p class="carousel-card-subtitle">Junior</p>
+        <p class="carousel-card-body">Hill said he recognizes that at times the SA seems to be working against the student body, but the body’s “roots and intentions” are to support students.</p>
+        <span class="carousel-card-link">Read Full Bio</span>
+    </div>
+</div>
+</a>
+
+
+
+
+
+<div class="guide-section-header" style="margin-bottom: 2em; background-color: #5E15FF; width: fit-content; padding: 1em; padding-left: 1em;  padding-right: 1em; color: white; border-radius: 16px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 2em;">
+  <h3 class="guide-section-header-title" style="font-size: 20pt;">Candidates for Vice President</h3>
+  <p class="guide-section-header-subtitle" style="margin: 0; padding: 0;">There are two candidates running for executive vice president this year.</p>
+</div>
+
+<a href="https://www.gwhatchet.com/?p=1138805&preview=true">
+  <div class="carousel-card">
+     <img class="carousel-image pres-kc" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03112021_DA_KateCarpenter2-1500x1000.jpg">
+     <div class="carousel-card-header">Vice President</div>
+     <div class="carousel-content">
+        <h3 class="carousel-card-title">Kate Carpenter</h3>
+        <p class="carousel-card-subtitle">Sophomore</p>
+        <p class="carousel-card-body">Carpenter said the SA needs to be approachable to build a better relationship with the student body.</p>
+        <span class="carousel-card-link">Read Full Bio</span>
+    </div>
+</div>
+</a>
+
+<a href="https://www.gwhatchet.com/?p=1138808&preview=true">
+  <div class="carousel-card">
+     <img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_SofiaPacker2-1500x1000.jpg">
+     <div class="carousel-card-header">Vice President</div>
+     <div class="carousel-content">
+        <h3 class="carousel-card-title">Sofia Packer</h3>
+        <p class="carousel-card-subtitle">Junior</p>
+        <p class="carousel-card-body">Packer said she is the best choice for vice president because she knows what it’s like to be on the “outside” of the SA.</p>
+        <span class="carousel-card-link">Read Full Bio</span>
+    </div>
+</div>
+</a>
+
+
+
+
+
+
+
+<div style="margin-top: 1em;">
+  <a href="https://www.gwhatchet.com/?p=1138834&preview=true">
+     <div class="guide-news-card" style="padding: 0.5em; border-radius: 16px; background-color: #ABEDFF; box-shadow: 0 4px 8px 0 rgba(82, 142, 255, 0.2), 0 6px 20px 0 rgba(82, 142, 255, 0.19);">
+        <img class="guide-news-image" style="background-color: #c4e5f6; object-fit: contain;" src="https://www.gwhatchet.com/wp-content/uploads/2020/04/THE-ELECTION-EXPLAINED-1500x1002.png">
+        <div class="guide-news-content">
+           <h3 class="guide-news-card-title" style="margin-top: 0.8em;">Fact checking candidates' platforms</h3>
+           <p class="guide-news-card-body">Top SA executive candidates have vowed to achieve many objectives if elected to office, but not all of their proposed initiatives are centered around fact.</p>
+           <div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Lauren Sforza</p>
+       </div>
+   </div>
+</a>
+</div>
+
+<div style="margin-top: 1em;">
+  <a href="https://www.gwhatchet.com/?p=1139003&preview=true">
+     <div class="guide-news-card" style="padding: 0.5em; border-radius: 16px; background-color: #ABEDFF; box-shadow: 0 4px 8px 0 rgba(82, 142, 255, 0.2), 0 6px 20px 0 rgba(82, 142, 255, 0.19);">
+        <img class="guide-news-image" style="background-color: #c4e5f6; object-fit: contain;" src="https://www.gwhatchet.com/wp-content/uploads/2020/04/THE-ELECTION-EXPLAINED-1500x1002.png">
+        <div class="guide-news-content">
+           <h3 class="guide-news-card-title" style="margin-top: 0.8em;">How to vote on referenda in this year's SA election</h3>
+           <p class="guide-news-card-body">The editorial board urges students to vote yes on both referenda this year. </p>
+           <div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Andrew Sugrue</p>
+       </div>
+   </div>
+</a>
+</div>
+
+</div>
+
+<div class="guide-section-header" style="margin-top: 3em;">
+   
+   <div class="endorsements-container">
+      <div class="guide-section-header" style=" background-color: #ABEDFF; width: fit-content; padding: 1em; padding-left: 1em;  padding-right: 1em; color: black; border-radius: 8px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 1em; margin-bottom: 0; padding-bottom: 0;">
+         <h3 class="guide-section-header-title" style="font-size: 24pt;">Hatchet Editorial Board Endorsements</h3>
+         <p class="guide-section-header-subtitle" style="margin: 0; padding: 1em;">The Hatchet's editorial board - a group of opinion writers and staff members on Hatchet staff who are not affiliated with the news section - interviewed all presidential and executive vice president candidates about their platforms in March. Here's who they decided to endorse for each position.</p>
+     </div>
+     <div class="endorsements-card-left">
+         <img class="endorsements-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/courtesy_HannahEdwards2-1500x1000.jpg">
+         <div class="endorsements-card-content">
+            <p class="endorsements-subtitle">For President</p>
+            <h3 class="endorsements-title">Hannah Edwards</h3>
+            <p class="endorsements-body">The editorial board felt that Edwards has the experience, passion and detailed plans needed to run the SA successfully. </p><br/>
+            <a href="https://www.gwhatchet.com/?p=1139008&preview=true" class="endorsements-link">Read Opinion Piece</a>
+        </div>
+    </div>
+    <div class="endorsements-card-right">
+     <img class="endorsements-image" src="https://www.gwhatchet.com/wp-content/uploads/2021/03/03112021_DA_KateCarpenter2-1500x1000.jpg">
+     <div class="endorsements-card-content">
+        <p class="endorsements-subtitle">For Vice President</p>
+        <h3 class="endorsements-title">Kate Carpenter</h3>
+        <p class="endorsements-body">It is a close call, but we believe Carpenter's experience and specific policy plans make her the best candidate for vice president.</p>
+        <a href="https://www.gwhatchet.com/?p=1138990&preview=true" class="endorsements-link">Read Opinion Piece</a>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+<a href="#">
+   <div class="guide-section-header" style="margin-bottom: 2em; background-color: #5E15FF; width: fit-content; padding: 1em; padding-left: 1em;  padding-right: 1em; color: white; border-radius: 16px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 4em;">
+      <h3 class="guide-section-header-title" style="font-size: 20pt;">Listen To The Podcast</h3>
+      <p class="guide-section-header-subtitle" style="margin: 0; padding: 0;">GW Hatchet's SA Election Podcast.</p>
+  </div>
+</a>
+
+</section>
+
+
+</div>
+</div>
 
 </body>
 <div id="MOBILEUSEREDIRECT" style="display:none;"></div>
